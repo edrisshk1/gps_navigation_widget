@@ -1,0 +1,38 @@
+{
+  "name": "gps_navigation_widget",
+  "version": "1.0.0",
+  "description": "GPS Navigation Library",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "build:watch": "rollup -c --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edrisshk1/gps_navigation_widget.git"
+  },
+  "keywords": [
+    "GPS",
+    "dashboard",
+    "widget",
+    "AB",
+    "lines",
+    "Waypoints",
+    "Agriculture",
+    "Mobile",
+    "Robot"
+  ],
+  "author": "Edris Hadj Khlil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edrisshk1/gps_navigation_widget/issues"
+  },
+  "homepage": "https://github.com/edrisshk1/gps_navigation_widget#readme",
+  "devDependencies": {
+    "@rollup/plugin-multi-entry": "^7.1.0",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@rollup/plugin-terser": "^1.0.0",
+    "rollup": "^4.60.4"
+  }
+}
