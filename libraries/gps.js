@@ -143,7 +143,8 @@ function attachLongPress(marker, callback) {
 // Unique instance ID — every async callback checks this to abort if
 // a newer widget instance has replaced this one (device switch).
 var _instanceId = Date.now() + '-' + Math.random().toString(36).slice(2, 8);
-var _widgetDeviceId = '${deviceID}'; // baked in by ThingsBoard at render time
+var deviceID = (document.getElementById('gps-container') || document.body).getAttribute('data-device-id') || '';
+var _widgetDeviceId = deviceID; // read from DOM data-device-id set by ThingsBoard
 
 // If a previous widget instance is still running, destroy it now.
 if (typeof window.__gpsMapWidgetDestroy === 'function') {
