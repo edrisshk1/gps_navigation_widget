@@ -8175,6 +8175,33 @@ async function loadNavigationMode() {
 }
 
 
+// Expose functions as globals so HTML onclick="functionName()" attributes work
+window.initializeMap = initializeMap;
+window.setMode = setMode;
+window.toggleFocusMode = toggleFocusMode;
+window.toggleLockMode = toggleLockMode;
+window.setNavigationMode = setNavigationMode;
+window.undoLastWaypoint = undoLastWaypoint;
+window.clearAllWaypoints = clearAllWaypoints;
+window.reversePath = reversePath;
+window.saveRoute = saveRoute;
+window.loadRoute = loadRoute;
+window.addWaypointFromRobot = addWaypointFromRobot;
+window.startABLines = startABLines;
+window.generateABPath = generateABPath;
+window.addABUTurns = addABUTurns;
+window.saveIndividualABLine = saveIndividualABLine;
+window.openClickGoPanel = openClickGoPanel;
+window.closeClickGoPanel = closeClickGoPanel;
+window.clickGoPick = clickGoPick;
+window.confirmClickGo = confirmClickGo;
+window.closeClickGoMissionPreview = closeClickGoMissionPreview;
+window.exportClickGoMission = exportClickGoMission;
+window.openPathHistoryPanel = openPathHistoryPanel;
+window.closePathHistoryPanel = closePathHistoryPanel;
+window.loadPathHistory = loadPathHistory;
+window.clearHistoricalPath = clearHistoricalPath;
+
 export default {
     initializeMap,
     setMode,
